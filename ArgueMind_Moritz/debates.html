@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>ArgueMind</title>
+		<link rel="stylesheet" href="http://fonts.googlepis.com/css?family=Ubuntu:300">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div id="headerBar">
+        	<a href="home"><img src="img/logo.png" id="logo"></a>
+            <div id="menu" class="menu">
+            	<nav class="nav">
+                    	<a onClick="getContent('home');history.pushState('page', 'Home', 'home');">Home</a>
+                        <a onClick="getContent('news');history.pushState('page', 'Topics', 'topics');">Topics</a>
+                        <a onClick="getContent('debates');history.pushState('page', 'Debates', 'debates');">Debates</a>
+                </nav>
+            </div>
+        </div>
+		<div class="wrapper" id="home">
+			<div id="startText">
+				<h1></h1>
+				<p>Connect with your friends — and other fascinating people. Get in-the-moment updates on the things that interest you. And watch events unfold, in real time, from every angle.</p>
+			</div>
+		</div>
+		<div class="wrapper" id="news">
+			<div class="content">
+				
+			</div>
+			<script>
+				function init(){
+					var json = {
+						type: "neo",
+						text: "getTopics"
+					}
+					send(json);
+				}
+			</script>
+		</div>
+		<div class="wrapper" id="debates">
+			<div class="content">
+				<div id="debate">
+					<div id="debateCon">
+					
+					</div>
+					<div id="debateInput">
+						<textarea id="debIn"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+
+		</div>
+		<script src="js/reconnecting-websocket.js"></script>
+	    <script src="js/jquery-1.11.1.min.js"></script>
+		<script>
+		function getContent(page){
+			$('.wrapper').fadeOut();
+			$('#'+page).fadeIn();
+		}
+		</script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
