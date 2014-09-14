@@ -1,0 +1,164 @@
+/* ArgueMind Stylesheet (Dropdown Menu) Script v1.0 */
+
+ul#navigation_main
+{
+    font-size: 32;
+    font-family: Ubuntu, Verdana;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 4px; 
+}
+
+ul#navigation_main li
+{
+    float: left;
+    position: relative;
+    list-style-type: none;
+    font-variant: small-caps;
+}
+
+a.navigation_link
+{
+    width: 80px;
+    margin-top: 0px;
+    color: #000000;
+    text-decoration: none;    
+}
+
+a.navigation_link:hover
+{
+    color: #000000;
+}
+
+ul#navigation_main li:hover
+{
+    color: #000000;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    cursor: pointer;
+    background-color: #ff7f00; 
+}
+
+ul#navigation_main li.Dropdown_1
+{
+    margin-right: 20px;
+    margin-top: 0px;
+    float: left;
+}
+
+ul#navigation_main li.Dropdown_2
+{
+    margin-right: 20px;
+    margin-top: 0px;
+    float: left;
+}
+
+ul#navigation_main li.Dropdown_3
+{
+    margin-right: 20px;
+    margin-top: 0px;
+    float: right;
+}
+
+ul#navigation_main li.Dropdown_4
+{
+    margin-right: 20px;
+    margin-top: 0px;
+    float: right;
+}
+
+/* AKTIV */
+
+ul#navigation_main li.Dropdown_1_aktiv
+{
+    color: #000000;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    cursor: pointer;
+    background-color: #ff7f00;
+    margin-right: 20px;
+    margin-top: 0px;
+    float: left; 
+}
+
+ul#navigation_main li.Dropdown_2_aktiv
+{
+    color: #000000;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    cursor: pointer;
+    background-color: #ff7f00; 
+    margin-right: 20px;
+    margin-top: 0px;
+    float: left;
+}
+
+ul#navigation_main li.Dropdown_3_aktiv
+{
+    color: #000000;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    cursor: pointer;
+    background-color: #ff7f00; 
+    margin-right: 20px;
+    margin-top: 0px;
+    float: left;
+}
+
+ul#navigation_main li.Dropdown_4_aktiv
+{
+    color: #000000;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    cursor: pointer;
+    background-color: #ff7f00;
+    margin-right: 20px;
+    margin-top: 0px;
+    float: left; 
+}
+
+ul#navigation_main li ul.navigation_dropdown
+{
+    background-color: #ff7f00;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: auto;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 18pt; 
+    z-index: 1000;
+}    
+
+ul#navigation_main li ul li
+{
+    display: block;
+    margin-top: 5px;
+    color: #000;
+}
+
+ul#navigation_main li ul li:hover
+{
+    color: #000;
+    background-color: #ffaa56;
+}
+ul#navigation_main li ul li input.reg_login_input
+{
+    background-color: #fff;
+    border: 1px;
+    border-top-color: #fff;
+    height: 25px;
+    width: 230px;
+}
+
+ul#navigation_main li>ul
+{
+    display: none;
+}
+
+ul#navigation_main li:hover>ul
+{
+    display: block;    
+}

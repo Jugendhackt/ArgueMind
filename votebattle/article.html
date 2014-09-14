@@ -1,0 +1,25 @@
+<link rel="stylesheet" type="text/css" href="/stylesheet.css" />	
+<link rel="stylesheet" type="text/css" href="/dropdown.css" />	
+<div id="article">
+	<h1>%s</h1>
+	<span class="topDate">%s</span><br><br>
+	<div class="topCon">%s</div>
+</div>
+<div id="comments">
+	<form method="post" action="">
+		<input type="text" name="username" value="Username" onfocus="if(this.value='Username'){this.value = ''}" onblur="if(this.value == ''){this.value = 'Username'}"><br>
+		<textarea name="content"></textarea><br>
+		<input type="submit" value="Senden">
+	</form>
+	%s
+</div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+	function up(id){
+		$.get('?type=up&id='+id);
+		alert("Vote transmitted");
+	}
+	function down(id){
+		$.get('?type=down&id='+id);
+	}
+</script>

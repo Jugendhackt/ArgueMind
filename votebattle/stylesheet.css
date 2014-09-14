@@ -1,0 +1,122 @@
+/* ArgueMind Stylesheet Script v1.0 */
+
+body
+{
+	background-color: #fff;
+	background-image: url(images/background.jpg);
+	background-position: top;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+ 
+#header
+{
+	background-color: #CCCCa4;
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: auto; 
+}
+	
+	.font
+	{
+		color: #FFFFFF;
+		font-size: 80px;
+		font-family: Ubuntu, Verdana;
+		margin-top: 8px;
+		font-variant: small-caps;
+		margin-left: 300px;
+	}
+
+	.logo
+	{
+		background-image: url(images/logo.png);
+		position: fixed;
+		margin-left: 200px;
+		top: 10px;
+		width: 80px;
+		height: 80px;
+		background-size: cover;
+	}
+
+#navigation
+{
+	background-color: #ffaa56;
+	width: auto;
+	height: 40px;
+	margin-top: 109px;
+	margin-right: 500px;
+}
+
+#search 
+{
+	padding: 5px;
+	float: right;
+	margin-top: -60px;
+	margin-right: 100px;
+	width: 250px;
+	height: 25px;
+	background-color: #fff;
+	border: 1px;
+	border-top-color: #fff;
+}
+
+#content
+{
+	background-color: #FFFFFF;
+	width: auto;
+	height: auto;
+	opacity: 0.7;
+	margin-right: 500px;
+
+}
+
+	.content_font
+	{
+		font-family: Ubuntu, Verdana;
+		color: #000000;
+		font-size: 18;
+	}
+
+	.content_title
+	{
+		font-family: Ubuntu, Verdana;
+		font-size: 46px;
+		font-variant: small-caps;
+		font-weight: bold;
+		color: #ffaa56;
+		margin-left: 1px;
+	}
+
+#notificationBar
+{
+	position: fixed;
+	z-index: 9;
+	background-color: transparent;
+	top: 94px;
+	height: 100%;
+	right: 0;
+	width: 20%;
+	min-width: 520px;
+	display: block;
+	border: 1px;
+	border-top-color: #fff;
+}
+
+.notification 
+{
+	position: relative;
+	width: 90%;
+	right: 0;
+	padding: 10px;
+	z-index: 9;
+	background-color: #ffaa56;
+	border-radius: 1px;
+	margin-top: 15px;
+	min-height: 40px;
+	margin-right: 10px;
+	float: right;
+}

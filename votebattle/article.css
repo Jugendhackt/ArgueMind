@@ -1,0 +1,19 @@
+#article h1 {
+		margin-bottom: 10px;
+	}
+	h4 {
+		margin-bottom: 5px;
+	}
+	.topDate {
+		font-family: monospace;
+		font-size: 12px;
+	}
+	.topCon {
+		font-family: sans-serif;
+	}	
+	input, textarea {
+		padding: 5px;
+		border-radius: 10px;
+		font-family: sans-serif;
+		width: 100%;
+	}
